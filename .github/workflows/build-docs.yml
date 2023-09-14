@@ -1,0 +1,38 @@
+name: Build and Deploy Documentation
+
+on:
+  push:
+    branches:
+      - main  # Adjust this to match your default branch name
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.x  # Choose your preferred Python version
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt  # Modify this to match your requirements file
+
+    - name: Build documentation
+      run: |
+        sphinx-build -b html sourcedir builddir  # Modify these paths accordingly
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        publish_dir: builddir  # Modify this to match your build directory
+        publish_branch: gh-pages
+
+    - name: Clean up
+      run: |
+        rm -rf builddir  # Clean up build artifacts
+
