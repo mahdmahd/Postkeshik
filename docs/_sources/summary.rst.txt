@@ -1,5 +1,10 @@
 پنی سیلین ها
 =============
+.. raw:: html
+   <audio controls="controls">
+         <source src="https://dl.musicguitars.ir/Music/Hayedeh/Hayedeh%20-%20Asal%20Cheshm.mp3" type="audio/wav">
+         Your browser does not support the <code>audio</code> element. 
+   </audio>
 
 مکانسیم فعالیت
 ------------------
