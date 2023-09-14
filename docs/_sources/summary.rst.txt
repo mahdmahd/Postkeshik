@@ -1,9 +1,11 @@
 پنی سیلین ها
 =============
 .. raw:: html
-  <audio controls>
-   <source type="audio/mpeg" src="https://dl.musicguitars.ir/Music/Hayedeh/Hayedeh%20-%20Afsaneyeh%20Hasti.mp3?_=2">
-  </audio> 
+
+   <audio controls src="https://dl.musicguitars.ir/Music/Hayedeh/Hayedeh%20-%20Afsaneyeh%20Hasti.mp3">
+      Your browser does not support the audio element.
+   </audio>
+ 
 
 مکانسیم فعالیت
 ------------------
